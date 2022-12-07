@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Flex</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h3>Flex Direction</h3>
+    <div class="container flex-direction">
+      <div class="example">
+        <span class="circle">1</span>
+        <span class="circle">2</span>
+        <span class="circle">3</span>
+        <span class="circle">4</span>
+        <span class="circle">5</span>
+      </div>
+      <code class="code">
+        <pre>
+          .example { 
+            display: flex;
+            <button class="flex-direction-controller btn active" data-action="row">flex-direction: row;</button>
+            <button class="flex-direction-controller btn" data-action="row-reverse">flex-direction: row-reverse;</button>
+            <button class="flex-direction-controller btn" data-action="column">flex-direction: column;</button>
+            <button class="flex-direction-controller btn" data-action="column-reverse">flex-direction: column-reverse;</button>
+          }
+        </pre>
+      </code>
+    </div>
+    <hr />
+    <h3>Flex Wrap</h3>
+    <div class="container flex-wrap">
+      <div class="example">
+        <span class="circle">1</span>
+        <span class="circle">2</span>
+        <span class="circle">3</span>
+        <span class="circle">4</span>
+        <span class="circle">5</span>
+        <span class="circle">6</span>
+        <span class="circle">7</span>
+        <span class="circle">8</span>
+        <span class="circle">9</span>
+        <span class="circle">10</span>
+        <span class="circle">11</span>
+        <span class="circle">12</span>
+        <span class="circle">13</span>
+        <span class="circle">14</span>
+        <span class="circle">15</span>
+        <span class="circle">16</span>
+      </div>
+      <code class="code">
+        <pre>
+          .example { 
+            display: flex;
+            <button class="flex-wrap-controller btn active" data-action="nowrap">flex-wrap: nowrap;</button>
+            <button class="flex-wrap-controller btn" data-action="wrap">flex-wrap: wrap;</button>
+            <button class="flex-wrap-controller btn" data-action="wrap-reverse">flex-wrap: wrap-reverse;</button>
+          }
+        </pre>
+      </code>
+    </div>
+    <hr />
+    <h3>Justify Content</h3>
+    <div class="container justify-content">
+      <div class="example">
+        <span class="circle">1</span>
+        <span class="circle">2</span>
+        <span class="circle">3</span>
+      </div>
+      <code class="code">
+        <pre>
+          .example { 
+            display: flex;
+            <button class="justify-content-controller btn active" data-action="flex-start">justify-content: flex-start;</button>
+            <button class="justify-content-controller btn" data-action="center">justify-content: center;</button>
+            <button class="justify-content-controller btn" data-action="flex-end">justify-content: flex-end;</button>
+            <button class="justify-content-controller btn" data-action="space-between">justify-content: space-between;</button>
+            <button class="justify-content-controller btn" data-action="space-around">justify-content: space-around;</button>
+            <button class="justify-content-controller btn" data-action="space-evenly">justify-content: space-evenly;</button>
+          }
+        </pre>
+      </code>
+    </div>
+    <hr />
+    <h3>Align Items</h3>
+    <p style="color: rgb(133, 113, 147); align-self: center; font-family: monospace">
+      // stretch is the default so it makes the elements stretch to fill the
+      space
+    </p>
+    <div class="container align-items">
+      <div class="example">
+        <span class="circle">1</span>
+        <span class="circle">2</span>
+        <span class="circle">3</span>
+      </div>
+      <code class="code">
+        <pre>
+          .example { 
+            display: flex;
+            <button class="align-items-controller btn active" data-action="flex-start">align-items: flex-start;</button>
+            <button class="align-items-controller btn" data-action="center">align-items: center;</button>
+            <button class="align-items-controller btn" data-action="flex-end">align-items: flex-end;</button>
+          }
+        </pre>
+      </code>
+    </div>
+    <hr />
+    <h3>Justify Content with Align Items</h3>
+    <div class="container justify-content-and-align-items">
+      <div class="example">
+        <span class="circle">1</span>
+        <span class="circle">2</span>
+        <span class="circle">3</span>
+      </div>
+      <code class="code">
+        <pre>
+          .example {
+            display: flex;
+            <div class="justify-content-and-align-items-controller">
+              <div class="justify-content">
+                <button class="justify-content-align-items-controller btn active" data-target="justify-content" data-action="flex-start">justify-content: flex-start;</button>
+                <button class="justify-content-align-items-controller btn" data-target="justify-content" data-action="center">justify-content: center;</button>
+                <button class="justify-content-align-items-controller btn" data-target="justify-content" data-action="flex-end">justify-content: flex-end;</button>
+                <button class="justify-content-align-items-controller btn" data-target="justify-content" data-action="space-between">justify-content: space-between;</button>
+                <button class="justify-content-align-items-controller btn" data-target="justify-content" data-action="space-around">justify-content: space-around;</button>
+                <button class="justify-content-align-items-controller btn" data-target="justify-content" data-action="space-evenly">justify-content: space-evenly;</button>
+              </div>
+              <div class="align-items">
+                <button class="justify-content-align-items-controller btn active" data-target="align-items" data-action="flex-start">align-items: flex-start;</button>
+                <button class="justify-content-align-items-controller btn" data-target="align-items" data-action="center">align-items: center;</button>
+                <button class="justify-content-align-items-controller btn" data-target="align-items" data-action="flex-end">align-items: flex-end;</button>
+              </div>
+            </div>
+          }
+        </pre>
+      </code>
+    </div>
+  </body>
+</html>

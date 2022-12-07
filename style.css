@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color:gainsboro;
+}
+body {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container {
+  display: flex;
+}
+.container .example {
+  max-width: 100%;
+  width: 50%;
+  display: flex;
+  border: 2px solid black;
+  margin-left: 10px;
+  align-items: baseline;
+}
+.container .code {
+  flex: 1;
+}
+hr {
+  width: 80%;
+  margin-inline: auto;
+  margin-block: 15px;
+}
+h3 {
+  font-family: sans-serif;
+  align-self: center;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  color: rgba(6, 57, 87, 0.773);
+}
+.circle {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(190, 139, 131);
+  color: rgb(38, 87, 113);
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.code {
+  padding: 10px;
+}
+.code pre {
+  width: 100%;
+  font-size: 15px;
+}
+.btn {
+  margin-block: 5px;
+  padding: 5px 10px;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: 100ms ease;
+  width: 250px;
+  background-color: rgba(62, 157, 169, 0.703);
+  border: 1 px solid ;
+  border-radius: 5px;
+  color: black;
+}
+.btn:hover {
+  margin-block: 5px;
+  padding: 5px 10px;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: 100ms ease ;
+  width: 250px;
+  background-color: rgb(166, 96, 101);
+  border: 1 px solid ;
+  border-radius: 5px;
+  color: rgba(3, 17, 19, 0.648);
+}
+.btn.active {
+  opacity: 1;
+}
+.btn:active {
+  scale: 0.95;
+}
+.justify-content-and-align-items .example {
+  width: 80%;
+  max-width: 800px;
+  height: 300px;
+}
+.justify-content-and-align-items {
+  align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .justify-content-and-align-items {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 800px) {
+  .justify-content-and-align-items-controller {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 735px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .align-items .example {
+    height: 150px;
+  }
+}
+
+.justify-content-and-align-items-controller {
+  display: flex;
+}
